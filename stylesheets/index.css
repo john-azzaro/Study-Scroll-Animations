@@ -1,0 +1,78 @@
+*, *::before, *::after {                                                       /* for all elements inside the application (including pseudo elements), remove basic margins... */
+    box-sizing: border-box;                                                      /* ... standardize widths and heights. */
+    margin: 0;                                                                   /* ... set margin to 0 ... */
+    padding: 0;                                                                  /* ... set padding to 0 ... */
+   font-family: 'Poppins', sans-serif;                                                       /* Poppins with default of sans-serif*/  
+  }
+
+header {                                                                                       /* For the header (which holds our title and subtext)*/
+    display: flex;                                                                                  /* To center your content, set display to flex...*/
+    justify-content: center;                                                                         /* ... then center the content in the middle horizontally... */                    
+    align-items: center;                                                                             /* ... then center the content vertically.... */
+    text-align: center;                                                                              /* ... and lastly center the text itself.*/
+    height: 100vh;                                                                                   /* ... the header will be the size of the viewport...*/
+    background: linear-gradient(to right, rgb(177, 178, 189), rgb(165, 168, 149));
+}
+
+.jumbotron > h1 {                                                                              /* styling for h1 element in the jumbotron*/
+    font-size: 2.5em;
+    margin-bottom: .2em;
+}
+
+.accent-text {                                                                                  /* for highlighted text in the h1 element: */
+    color: rgb(72, 94, 128); 
+    font-size: 3rem;                                                    
+}
+
+.jumbotron > p {                                                                              /* styling for the p element in the jumbotron*/
+    font-size: 1em;   
+}
+
+.second-page {                                                                                      /* For the bottom section we want to transition into:*/
+    display: flex;                                                                                  /* To center your content, set display to flex...*/
+    justify-content: center;                                                                         /* ... then center the content in the middle horizontally... */                    
+    align-items: center;                                                                             /* ... then center the content vertically.... */
+    text-align: center;                                                                              /* ... and lastly center the text itself.*/
+    height: 100vh;                                                                                   /* ... the header will be the size of the viewport...*/
+    background: rgb(221, 221, 221);
+}
+
+.second-page .left-column {                                              /* Targeting the decendant (img-wrapper) of the parent (.home-main-section): */
+    display: flex;                                                                        /* ... display elements next to each other ... */
+    flex-direction: column;                                                               /* ... display elements stacked on top of each other ... */
+    align-items: flex-start;                                                              /* ... so that items do not expand to fill entire width ... */
+    margin: 2rem;                                                                         /* ... for spacing between image and text ...*/
+    align-self: center;                                                                   /* ... centers the content in the center of the screen. */
+    max-width: 30vw;
+}
+
+/*/ Call to Action Right with increment button/*/
+.second-page .right-column {                                                     /* For call to action (on right) */
+    display: flex;                                                                        /* ... display elements next to each other ... */
+    flex-direction: column;                                                               /* ... display elements stacked on top of each other ... */
+    align-items: flex-start;                                                              /* ... so that items do not expand to fill entire width ... */
+    margin: 2rem;                                                                         /* ... for spacing between image and text ...*/
+    align-self: center;                                                                   /* ... centers the content in the center of the screen. */
+    max-width: 50vw;
+    padding-left: 20px;
+}
+
+.para {
+    padding-bottom: 30px;
+}
+
+.para h3 {
+    padding-bottom: 14px;
+    font-size: 1.5em;
+    color: rgb(72, 94, 128);
+}
+
+.para p {
+    color: rgb(63, 59, 59);
+}
+
+.revealed-text {
+    max-width: 500px;
+    padding-top: 20px;
+}
+
