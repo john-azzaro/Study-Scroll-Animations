@@ -32,8 +32,10 @@ STEP 4: Add the styling for when the element appears.
 
 STEP 5: There are two ways to setup your javascript: vanilla javascript or jquery.
 ==================================================================================
+
 5.1: jquery
-===========
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
    5.1.1: Create the initial scaffold:
    ===================================
    -------------------------------------------
@@ -142,7 +144,7 @@ STEP 5: There are two ways to setup your javascript: vanilla javascript or jquer
     }
     --------------------------------------------------------
 
-    * And finally, add the scrollAppear to the handleScroll function so it is hooked up to the listener
+    5.1.4: And finally, add the scrollAppear to the handleScroll function so it is hooked up to the listener
     --------------------------------------------------------===========================================
     function scrollAppear() {
         let para = document.querySelector('.para');      
@@ -178,9 +180,8 @@ STEP 5: There are two ways to setup your javascript: vanilla javascript or jquer
 --------------------------------------------------------
 
 
-
 5.2: Vanillia javascript
-========================
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 --------------------------------------------------------
     function scrollAppear() {
         let para = document.querySelector('.para');      <== First, select the "para" element in the DOM.
