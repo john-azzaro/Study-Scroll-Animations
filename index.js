@@ -11,5 +11,5 @@ function scrollAppear() {                                                       
     }
 }
  
-window.addEventListener('scroll', scrollAppear);                                 /* event listener */
+window.addEventListener('scroll', scrollAppear);                                 /* listen on window and on scroll, run scrollAppear */
 
