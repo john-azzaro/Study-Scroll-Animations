@@ -30,4 +30,29 @@ STEP 4: Add the styling for when the element appears.
             transform: translateY(0px)            
         }
 
-STEP 5: In your index.js, add the following logic:
+STEP 5: In your index.js, add your logic.:
+================================================================
+
+--------------------------------------------------------
+    function scrollAppear() {
+        let para = document.querySelector('.para');      <== First, select the "para" element in the DOM.
+        ...
+        ...
+        ...
+        ...
+        ...
+    }
+--------------------------------------------------------
+
+--------------------------------------------------------
+    function scrollAppear() {
+        let para = document.querySelector('.para');      
+        let paraPosition =  para.getBoundingClientRect().top;   <== Second, we need to get the distance of the text relative to the window.
+        ...
+        ...
+        ...
+        ...
+    }
+--------------------------------------------------------
+
+
