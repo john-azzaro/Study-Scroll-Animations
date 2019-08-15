@@ -13,4 +13,6 @@ STEP 2: Then set the transform property to translateY.
 
         transform: translateY(20px);
 
-STEP 3: 
+STEP 3: Add transition so the animation is smooth.
+    
+        transition: 0.5s all ease-in-out
