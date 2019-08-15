@@ -1,2 +1,16 @@
 scroll animation process notes
 ==============================
+
+STEP 1: Set the element opacity (you want to animate) to 0. 
+     
+        opacity: 0,
+
+STEP 2: Then set the transform property to translateY.
+    *   This is done so that the text will start a little lower at the beginning of the animation.
+    *   Think of this as the animation start location.
+    *   In the case of this study, we want the text to start on the y-axis 20px lower.
+    *   Then, when we apply the new class to this element, it will go back to its original intended location.
+
+        transform: translateY(20px);
+
+STEP 3: 

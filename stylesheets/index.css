@@ -44,6 +44,7 @@ header {                                                                        
     margin: 2rem;                                                                         /* ... for spacing between image and text ...*/
     align-self: center;                                                                   /* ... centers the content in the center of the screen. */
     max-width: 30vw;
+    max-height: 100vh;
 }
 
 /*/ Call to Action Right with increment button/*/
@@ -59,6 +60,7 @@ header {                                                                        
 
 .para {
     padding-bottom: 30px;
+    opacity: 0;                                                                              /* P1  --  Set the element (in this case the left column content) to 0. */
 }
 
 .para h3 {
