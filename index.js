@@ -11,19 +11,19 @@ function scrollAppear() {                                                       
     }
 }
 
-function handleScroll() {
-    $(document).on('scroll', function() {
+function handleScroll() {                                                        /* when handlescroll runs...*/ 
+    $(document).on('scroll', function() {                                         /* listen on the document on scroll, and when the user scrolls, run scrollAppear */
         scrollAppear();
     });
 }
 
-function setupEventListeners() {
+function setupEventListeners() {                                              /* when setupEventListeners runs, run handleScroll*/
     handleScroll();
 }
 
-function initialize() {
+function initialize() {                                                        /* when app initilizes, run setupEventListeners */
     setupEventListeners();
 }
 
-$(initialize);
+$(initialize);                                                                /* initialize the app to runb on start*/
  
