@@ -37,10 +37,7 @@ STEP 5: In your index.js, add your logic.:
     function scrollAppear() {
         let para = document.querySelector('.para');      <== First, select the "para" element in the DOM.
         ...
-        ...
-        ...
-        ...
-        ...
+
     }
 --------------------------------------------------------
 
@@ -50,9 +47,77 @@ STEP 5: In your index.js, add your logic.:
         let paraPosition =  para.getBoundingClientRect().top;   <== Second, we need to get the distance of the text relative to the window.
         ...
         ...
+
+    }
+--------------------------------------------------------
+
+--------------------------------------------------------
+    function scrollAppear() {
+        let para = document.querySelector('.para');      
+        let paraPosition =  para.getBoundingClientRect().top;    
+        let screenHeight = window.innerHeight / 1.3;             <== use this to make sure it works for different screen sizes 
         ...
+        ...
+
+    }
+--------------------------------------------------------
+
+--------------------------------------------------------
+    function scrollAppear() {
+        let para = document.querySelector('.para');      
+        let paraPosition =  para.getBoundingClientRect().top;    
+        let screenHeight = window.innerHeight / 1.3;             
+        console.log('paraPosition ' + paraPosition);           <== log to console to test position and screenHeight.
+        console.log(screenHeight);
+
         ...
     }
+--------------------------------------------------------
+
+--------------------------------------------------------
+    function scrollAppear() {
+        let para = document.querySelector('.para');      
+        let paraPosition =  para.getBoundingClientRect().top;    
+        let screenHeight = window.innerHeight / 1.3;             
+        console.log('paraPosition ' + paraPosition);           <== log to console to test position and screenHeight.
+        console.log(screenHeight);
+
+        ...
+    }
+--------------------------------------------------------
+
+--------------------------------------------------------
+    function scrollAppear() {
+        let para = document.querySelector('.para');      
+        let paraPosition =  para.getBoundingClientRect().top;    
+        let screenHeight = window.innerHeight / 1.3;             
+        console.log('paraPosition ' + paraPosition);                         
+        console.log(screenHeight);
+
+        if (paraPosition < screenHeight) {                       <== if the position of the para element in less than the screen position, add class to para.
+            $(".para").addClass(".para-appear");
+            console.log('para appears!!!')
+        }
+        ...
+    }
+--------------------------------------------------------
+
+--------------------------------------------------------
+    function scrollAppear() {
+        let para = document.querySelector('.para');      
+        let paraPosition =  para.getBoundingClientRect().top;    
+        let screenHeight = window.innerHeight / 1.3;             
+        console.log('paraPosition ' + paraPosition);                         
+        console.log(screenHeight);
+
+        if (paraPosition < screenHeight) {                      
+            $(".para").addClass(".para-appear");
+            console.log('para appears!!!')
+        }
+    }
+
+window.addEventListener('scroll', scrollAppear);              <== add an event listener for scroll event.
+
 --------------------------------------------------------
 
 

@@ -5,12 +5,12 @@ function scrollAppear() {                                                       
     console.log('paraPosition ' + paraPosition);
     console.log(screenHeight);
 
-    if (paraPosition < screenHeight) {                                           /* if the position of the para element in less than the screen position, ....*/
+    if (paraPosition < screenHeight) {                                           /* if the position of the para element in less than the screen position, add class to para....*/
         $(".para").addClass(".para-appear");
         console.log('para appears!!!')
     }
 }
 
-
-window.addEventListener('scroll', scrollAppear);
+ 
+window.addEventListener('scroll', scrollAppear);                                 /* event listener */
 
