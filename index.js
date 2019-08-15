@@ -6,7 +6,7 @@ function scrollAppear() {                                                       
     console.log(screenHeight);
 
     if (paraPosition < screenHeight) {                                           /* if the position of the para element in less than the screen position, add class to para....*/
-        $(".para").addClass(".para-appear");
+        $(".para").addClass("para-appear");
         console.log('para appears!!!')
     }
 }
