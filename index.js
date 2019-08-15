@@ -10,6 +10,20 @@ function scrollAppear() {                                                       
         console.log('para appears!!!')
     }
 }
- 
-window.addEventListener('scroll', scrollAppear);                                 /* event listener */
 
+function handleScroll() {
+    $(document).on('scroll', function() {
+        scrollAppear();
+    });
+}
+
+function setupEventListeners() {
+    handleScroll();
+}
+
+function initialize() {
+    setupEventListeners();
+}
+
+$(initialize);
+ 
