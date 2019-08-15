@@ -2,10 +2,12 @@ scroll animation process notes
 ==============================
 
 STEP 1: Set the element opacity (you want to animate) to 0. 
+===========================================================
      
         opacity: 0,
 
 STEP 2: Then set the transform property to translateY.
+======================================================
     *   This is done so that the text will start a little lower at the beginning of the animation.
     *   Think of this as the animation start location.
     *   In the case of this study, we want the text to start on the y-axis 20px lower.
@@ -14,5 +16,18 @@ STEP 2: Then set the transform property to translateY.
         transform: translateY(20px);
 
 STEP 3: Add transition so the animation is smooth.
+==================================================
     
         transition: 0.5s all ease-in-out
+
+STEP 4: Add the styling for when the element appears.
+=====================================================
+    *   So for the class to make the para element appear, set the opacity to 1 will make it appear and set the transform 
+        property to a translateY of 0px will bring the element back to orignal placement.
+
+        .para-appear {       
+            opacity: 1;                   
+            transform: translateY(0px)            
+        }
+
+STEP 5: In your index.js, add the following logic:
