@@ -60,9 +60,10 @@ header {                                                                        
 
 .para {
     padding-bottom: 30px;
-    opacity: 0;                                                                          /* S1  --  Set the element (in this case the left column content) to 0. */
+    opacity: 1;                                                                          /* S1  --  Set the element (in this case the left column content) to 0. */
     transform: translateY(20px);                                                         /* S2  --  Set the "starting point" where the text will move from (in this case 20px lower) */
     transition: 0.5s all ease-in-out;                                                    /* S3  --  Set the animation to 5ms, with all the attributes easing-in-out */
+
 }
 
 .para-appear {                                                                           /* S4  --  This is the class to make the para element appear. */
