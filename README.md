@@ -14,8 +14,21 @@ text and images.
 <dl>
 <dd> 
 
-### 
+### Using DOM para.getBoundingClientRect.
 -----
+For this particular implementation of scroll effects (i.e. without a library), I need to make use of ```para.getBoundingClientRect``` which returns the size of an element and is position relative to its viewport. In the case of this study, I needed it to get the distance of where this element is relative to the window by getting "para" and the method .getBoundingClientRect(angle), then access the top property.
+```JavaScript
+   let paraPosition =  para.getBoundingClientRect().top;
+```
+
+<br>
+
+### Using DOM window.innerHeight.
+-----
+This was interesting to use as it was used to make sure the transition works for different screen sizes. In particular, the transition was set for 1.3 the screen height of the viewport.
+```JavaScript
+  let screenHeight = window.innerHeight / 1.3;
+```
 
 
 </dd>
