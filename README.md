@@ -9,6 +9,20 @@ text and images.
 
 <br>
 
+## What are the key takeaways from the Scroll Animations Study?
+
+<dl>
+<dd> 
+
+### 
+-----
+
+
+</dd>
+</dl>
+
+<br>
+
 ## Does Scroll Animations Study feature commentary?
 Yes! The Scroll Animations Study features commentary. which are in all files as well as the processNotes.txt which gives you a better idea of the step-by-step
 reasoning.  
