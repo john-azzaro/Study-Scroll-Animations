@@ -4,9 +4,16 @@ See it Live:  https://john-azzaro.github.io/Study-Scroll-Animations/
 <br>
 
 ## What is Scroll Animations Study?
-"Scroll Animations Study" is an exploration of interactive animations on events such as scroll.  This adds a nice touch to websites by revealing
+"Scroll Animations Study" is an exploration of interactive animations on events such as scroll.  In this example, when the user
+scrolls down the page, two paragraphs will gently reveal from a slightly lower position. This adds a nice touch to websites by revealing
 text and images.
 
+Here are a few questions from the study to explore:
+
+* [What are the key takeaways from the Scroll Animations Study?](#What-are-the-key-takeaways-from-the-Scroll-Animations-Study)
+* [Does Scroll Animations Study feature commentary?](#Does-Scroll-Animations-Study-feature-commentary)
+* [What are the key features of the Scroll Animations Study?](#What-are-the-key-features-of-the-Scroll-Animations-Study)
+* [Screenshots](#Screenshots)
 <br>
 
 ## What are the key takeaways from the Scroll Animations Study?
